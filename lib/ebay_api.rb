@@ -21,7 +21,7 @@ module EbayAPI
 
 
   def sandbox?
-    options.environment == :sandbox
+    options.environment.to_s == 'sandbox'
   end
 
   def login_url
